@@ -1,0 +1,83 @@
+
+
+
+
+:root {
+    --primary: #6366f1;
+    --secondary: #a855f7;
+    --dark: #0f172a;
+    --glass: rgba(255, 255, 255, 0.1);
+}
+
+body {
+    margin: 0; font-family: 'Cairo', sans-serif;
+    background: #0b0e14; color: #fff; overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 20px 8%; background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(10px); position: fixed; width: 100%; top: 0; z-index: 1000;
+}
+
+.logo { font-size: 24px; font-weight: 800; color: #fff; }
+.logo span { color: var(--primary); }
+.nav-links { list-style: none; display: flex; align-items: center; }
+.nav-links li a { color: #cbd5e1; text-decoration: none; margin: 0 20px; transition: 0.3s; }
+.nav-links li a:hover { color: var(--primary); }
+
+.join-btn {
+    background: linear-gradient(45deg, var(--primary), var(--secondary));
+    border: none; padding: 10px 25px; border-radius: 8px; color: #fff;
+    cursor: pointer; font-weight: bold; transition: 0.3s;
+}
+
+/* Hero Section */
+.hero {
+    height: 70vh; display: flex; align-items: center; justify-content: center;
+    background: radial-gradient(circle at top right, #1e1b4b, #0b0e14);
+    text-align: center; padding-top: 80px;
+}
+
+.hero h1 { font-size: 3.5rem; margin-bottom: 10px; }
+.hero h1 span { background: linear-gradient(to right, #818cf8, #c084fc); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+
+.search-box {
+    position: relative; max-width: 500px; margin: 30px auto;
+}
+
+.search-box input {
+    width: 100%; padding: 15px 25px; border-radius: 30px; border: none;
+    background: var(--glass); color: #fff; border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Specialty Cards */
+.specialties { padding: 80px 8%; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+
+.card {
+    background: rgba(30, 41, 59, 0.5); border: 1px solid rgba(255,255,255,0.05);
+    padding: 30px; border-radius: 20px; transition: 0.4s; position: relative; overflow: hidden;
+}
+
+/* تأثير الـ Hover العملي المميز */
+.card:hover {
+    transform: translateY(-10px) scale(1.02);
+    border-color: var(--primary);
+    background: rgba(30, 41, 59, 0.8);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.card-icon {
+    font-size: 40px; color: var(--primary); margin-bottom: 20px;
+}
+
+.explore-btn {
+    background: transparent; border: 1px solid var(--primary); color: var(--primary);
+    padding: 8px 20px; border-radius: 5px; cursor: pointer; transition: 0.3s;
+}
+
+.explore-btn:hover { background: var(--primary); color: #fff; }
+
+.card-footer { display: flex; justify-content: space-between; align-items: center; margin-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px; }

@@ -1,0 +1,80 @@
+
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أكاديمية المستقبل | اختر مسارك</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com" rel="stylesheet">
+    <!-- مكتبة الأيقونات الشهيرة -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com">
+</head>
+<body>
+
+    <!-- القائمة العلوية -->
+    <nav class="navbar">
+        <div class="logo">EDU<span>X</span></div>
+        <ul class="nav-links">
+            <li><a href="#">الرئيسية</a></li>
+            <li><a href="#">التخصصات</a></li>
+            <li><button class="join-btn">انضم الآن</button></li>
+        </ul>
+    </nav>
+
+    <!-- واجهة الترحيب (Hero Section) -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>اخترتخصصك من <span>هنا</span></h1>
+            <p>اكتشف أكثر من 50 تخصصاً جامعياً وتقنياً بأحدث المناهج العالمية.</p>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="ابحث عن تخصص (برمجة، طب...)...">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- شبكة التخصصات التفاعلية -->
+    <section class="specialties">
+        <div class="container">
+            <div class="grid" id="specialtiesGrid">
+                <!-- بطاقة تخصص 1 -->
+                <div class="card" data-category="tech">
+                    <div class="card-icon"><i class="fas fa-code"></i></div>
+                    <h3>تطوير الويب</h3>
+                    <p>تعلم بناء المواقع التفاعلية باستخدام أحدث التقنيات.</p>
+                    <div class="card-footer">
+                        <span><i class="far fa-clock"></i> 12 شهر</span>
+                        <button class="explore-btn">استكشف</button>
+                    </div>
+                </div>
+
+                <!-- بطاقة تخصص 2 -->
+                <div class="card" data-category="medical">
+                    <div class="card-icon"><i class="fas fa-microscope"></i></div>
+                    <h3>العلوم الحيوية</h3>
+                    <p>استكشف عالم الجينات والمختبرات الطبية الحديثة.</p>
+                    <div class="card-footer">
+                        <span><i class="far fa-clock"></i> 5 سنوات</span>
+                        <button class="explore-btn">استكشف</button>
+                    </div>
+                </div>
+
+                <!-- بطاقة تخصص 3 -->
+                <div class="card" data-category="design">
+                    <div class="card-icon"><i class="fas fa-pen-nib"></i></div>
+                    <h3>التصميم الرقمي</h3>
+                    <p>صمم واجهات المستخدم (UI/UX) والهويات البصرية.</p>
+                    <div class="card-footer">
+                        <span><i class="far fa-clock"></i> 8 أشهر</span>
+                        <button class="explore-btn">استكشف</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
